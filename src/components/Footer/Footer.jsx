@@ -31,35 +31,28 @@ const bgImage = {
 };
 const Footer = () => {
   return (
-    <div style={bgImage} className=" text-white">
+    <div style={bgImage} className="text-white">
       <div className="bg-black/40 min-h-[400px]">
-        <div className="container grid md:grid-cols-3 pb-20 pt-5">
+        <div className="grid md:grid-cols-3 pt-5 pb-20 container">
           {/* company details */}
-          <div className="py-8 px-4">
+          <div className="px-4 py-8">
             <a
               href="#"
-              className="font-semibold tracking-widest text-2xl sm:text-3xl font-cursive
-"
+              className="font-cursive font-semibold text-2xl sm:text-3xl tracking-widest"
             >
               Coffee Cafe
             </a>
-            <p className="  pt-4">
+            <p className="pt-4">
               Crafted Coffee, Cozy Vibes, Unforgettable Moments – Your Perfect
               Espresso Escape
             </p>
-            <a
-              href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ"
-              target="_blank"
-              className="inline-block bg-[#3d2517] py-2 px-4 mt-5 text-sm rounded-full"
-            >
-              Visit our YouTube Channel
-            </a>
+            
           </div>
 
           {/* Footer links */}
-          <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
-            <div className="py-8 px-4">
-              <h1 className="text-xl font-semibold sm:text-left mb-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+            <div className="px-4 py-8">
+              <h1 className="mb-3 font-semibold text-xl sm:text-left">
                 Important Links
               </h1>
               <ul className="space-y-3">
@@ -76,8 +69,8 @@ const Footer = () => {
               </ul>
             </div>
             {/* second col links */}
-            <div className="py-8 px-4">
-              <h1 className="text-xl font-semibold sm:text-left mb-3">
+            <div className="px-4 py-8">
+              <h1 className="mb-3 font-semibold text-xl sm:text-left">
                 Quick Links
               </h1>
               <ul className="space-y-3">
@@ -85,7 +78,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={data.link}
-                      className="inline-block hover:scale-105 duration-200 "
+                      className="inline-block hover:scale-105 duration-200"
                     >
                       {data.title}
                     </a>
@@ -95,23 +88,23 @@ const Footer = () => {
             </div>
 
             {/* Company Address */}
-            <div className="py-8 px-4 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-semibold sm:text-left mb-3">
+            <div className="col-span-2 px-4 py-8 sm:col-auto">
+              <h1 className="mb-3 font-semibold text-xl sm:text-left">
                 Address
               </h1>
               <div>
-                <p className="mb-3">Noida , Uttar Pradesh</p>
-                <p>+91 1234567890</p>
+                <p className="mb-3">Cox's Bazar, Bangladesh</p>
+                <p>01829000000</p>
 
                 {/* social links */}
                 <div className="flex items-center gap-3 mt-6">
                   <a href="#">
                     <FaInstagram className="text-3xl hover:text-primary duration-300" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.facebook.com/emansarwar.emu/">
                     <FaFacebook className="text-3xl hover:text-primary duration-200" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/emansarwaralam/">
                     <FaLinkedin className="text-3xl hover:text-primary duration-200" />
                   </a>
                 </div>
